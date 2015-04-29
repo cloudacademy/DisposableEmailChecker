@@ -1,16 +1,14 @@
-from django.conf import settings
 import re
-import sys
 
 
-class DisposableEmailChecker():
+class DisposableEmailChecker(object):
     """
     Check if an email is from a disposable
     email service
     """
     
-    def __init__(self):
-        self.emails = [line.strip() for line in open(settings.DISPOSABLE_EMAIL_DOMAINS)]
+    def __init__(self,database_path):
+        self.emails = [line.strip() for line in open(database_path)]
     
     def chunk(self,l,n):
         return (l[i:i+n] for i in xrange(0, len(l), n))

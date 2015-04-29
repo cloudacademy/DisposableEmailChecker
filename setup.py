@@ -2,15 +2,16 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name = "django-disposable-email-checker",
-    version = "0.2.3",
+    name = "disposable-email-checker",
+    version = "0.1",
     packages = find_packages(),
-    author = "Aaron Bassett",
-    author_email = "me@aaronbassett.com",
-    description = "Python class for use with Django to detect Disposable Emails",
+    author = "Giacomo Marinangeli",
+    author_email = "giacomo@cloudacademy.com",
+    description = "Python class to detect Disposable Emails - Based on "
+                  "https://github.com/aaronbassett/DisposableEmailChecker",
     license = "MIT License",
-    keywords = "django email disposable validation",
-    url = "https://github.com/aaronbassett/DisposableEmailChecker",
+    keywords = "email disposable validation",
+    url = "https://github.com/cloudacademy/DisposableEmailChecker",
     
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -22,6 +23,5 @@ setup(
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 2 :: Only',
-        'Framework :: Django'
     ]
 )
