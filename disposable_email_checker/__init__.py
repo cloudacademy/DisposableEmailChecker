@@ -9,7 +9,7 @@ class DisposableEmailChecker(object):
     
     def __init__(self,database_path):
         with open(database_path) as database_file:
-            self._disposable_domains = [line.strip() for line in database_file]
+            self._disposable_domains = [line.strip() for line in database_file if line.strip()]
     
     def chunk(self,l,n):
         return (l[i:i+n] for i in xrange(0, len(l), n))
