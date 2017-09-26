@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "disposable-email-checker",
-    version = "0.1",
+    version = "",
     packages = find_packages(),
     author = "Giacomo Marinangeli",
     author_email = "giacomo@cloudacademy.com",
