@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name = "ca.disposable-email-checker",
+    name = "disposable-email-checker",
     version = "",
     packages = find_packages(),
     author = "Giacomo Marinangeli",
